@@ -5,7 +5,7 @@
 (defclass font ()
   ((family :type string :initarg :family :accessor font-family :documentation "Font family.")
    (subfamily :type string :initarg :subfamily :accessor font-subfamily :documentation "Font subfamily. For e.g. regular, italic, bold, bold italib.")
-   (size :type numeric :initarg :size :accessor font-size :initform 12 :documentation "Font size in points.")
+   (size :type real :initarg :size :accessor font-size :initform 12 :documentation "Font size in points.")
    (underline :type boolean :initarg :underline :initform nil :accessor font-underline :documentation "Draw line under text string.")
    (strikethrough :type boolean :initarg :strikethrough :initform nil :accessor font-strikethrough :documentation "Draw strike through text string.")
    (overline :type boolean :initarg :overline :initform nil :accessor font-overline :documentation "Draw line over text string.")
